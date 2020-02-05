@@ -19,6 +19,7 @@ namespace cajero
 
         private void btnretirar_Click(object sender, EventArgs e)
         {
+
             double[] denominaciones = { 100, 50, 20, 10, 5, 1, 0.50, 0.25, 0.10, 0.05, 0.01 };
             double cantidad = double.Parse(txtcantidad.Text);
             sbyte n = 0;
@@ -36,6 +37,11 @@ namespace cajero
                 n = 0;
             }
             lblrespuesta.Text = respuesta;
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
