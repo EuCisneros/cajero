@@ -42,6 +42,7 @@
             this.btnretirar.TabIndex = 0;
             this.btnretirar.Text = "Retirar";
             this.btnretirar.UseVisualStyleBackColor = true;
+            this.btnretirar.Click += new System.EventHandler(this.btnretirar_Click);
             // 
             // lblcantidad
             // 
@@ -72,7 +73,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(305, 139);
+            this.ClientSize = new System.Drawing.Size(305, 203);
             this.Controls.Add(this.lblrespuesta);
             this.Controls.Add(this.txtcantidad);
             this.Controls.Add(this.lblcantidad);
