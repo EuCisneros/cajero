@@ -47,15 +47,52 @@ namespace cajero
         private void btncobrar_Click(object sender, EventArgs e)
         {
 
-            sbyte pagar = sbyte.Parse(txtpagar.Text);
-            sbyte efectivo = sbyte.Parse(txtefectivo.Text);
-            int res = 0;
-            res = efectivo - pagar;
-            lblcambio.Text = "Vuelto: $" + res;
+            double[] denominaciones = { 100, 50, 20, 10, 5, 1, 0.50, 0.25, 0.10, 0.05, 0.01 };
+            double pagar = double.Parse(txtpagar.Text);
+            double efectivo = double.Parse(txtefectivo.Text);
+            double proce = efectivo - pagar;
+
+            lblvuelto.Text = "Vuelto: $" + proce;
 
         }
 
         private void btnprocesar_Click(object sender, EventArgs e)
         {
+            int n = int.Parse(txtnumero.Text);
+            int cont = 0;
+            for (int i = 1; i <= n; i++)
+            {
+                if (n % i == 0)
+                {
+                    cont++;
+                }
 
+            }
+            if (cont == 2)
+            {
+                lblresp.Text = n + " Es Primo";
+            }
+            else
+            {
+                lblresp.Text = n + " No es Primo";
+            }
+        
         }
+
+        private void btnimprimir_Click(object sender, EventArgs e)
+        {
+            int a, b, lim, i, aux;
+            lim = int.Parse(txtNUM.Text);
+            string resfibo = "";
+            a = 1;
+            b = 1;
+            for (i = 0; i < lim; i++)
+            {
+                aux = a;
+                a = b;
+                b = aux + a;
+                resfibo += "La suma de  " + a + " + " + aux + " es " + b + "\n";
+                lblrfi.Text = "" + resfibo;
+            }
+    }
+}

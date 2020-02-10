@@ -28,174 +28,232 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnretirar = new System.Windows.Forms.Button();
-            this.lblcantidad = new System.Windows.Forms.Label();
-            this.txtcantidad = new System.Windows.Forms.TextBox();
-            this.lblrespuesta = new System.Windows.Forms.Label();
-            this.txtpagar = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.btnimprimir = new System.Windows.Forms.Button();
+            this.txtNUM = new System.Windows.Forms.TextBox();
+            this.lblrfi = new System.Windows.Forms.Label();
+            this.lblfibo = new System.Windows.Forms.Label();
+            this.btnprocesar = new System.Windows.Forms.Button();
+            this.txtnumero = new System.Windows.Forms.TextBox();
+            this.lblresp = new System.Windows.Forms.Label();
+            this.lblnumero = new System.Windows.Forms.Label();
+            this.lblvuelto = new System.Windows.Forms.Label();
+            this.btncobrar = new System.Windows.Forms.Button();
             this.txtefectivo = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.btncobrar = new System.Windows.Forms.Button();
-            this.lblcambio = new System.Windows.Forms.Label();
-            this.lblnumero = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtnumero = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.btnprocesar = new System.Windows.Forms.Button();
+            this.txtpagar = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblrespuesta = new System.Windows.Forms.Label();
+            this.txtcantidad = new System.Windows.Forms.TextBox();
+            this.lblcantidad = new System.Windows.Forms.Label();
+            this.btnretirar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // btnretirar
+            // btnimprimir
             // 
-            this.btnretirar.Location = new System.Drawing.Point(173, 94);
-            this.btnretirar.Name = "btnretirar";
-            this.btnretirar.Size = new System.Drawing.Size(75, 23);
-            this.btnretirar.TabIndex = 0;
-            this.btnretirar.Text = "Retirar";
-            this.btnretirar.UseVisualStyleBackColor = true;
-            this.btnretirar.Click += new System.EventHandler(this.btnretirar_Click);
+            this.btnimprimir.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnimprimir.ForeColor = System.Drawing.Color.Black;
+            this.btnimprimir.Location = new System.Drawing.Point(160, 258);
+            this.btnimprimir.Name = "btnimprimir";
+            this.btnimprimir.Size = new System.Drawing.Size(75, 23);
+            this.btnimprimir.TabIndex = 44;
+            this.btnimprimir.Text = "Imprimir";
+            this.btnimprimir.UseVisualStyleBackColor = true;
+            this.btnimprimir.Click += new System.EventHandler(this.btnimprimir_Click);
             // 
-            // lblcantidad
+            // txtNUM
             // 
-            this.lblcantidad.AutoSize = true;
-            this.lblcantidad.Location = new System.Drawing.Point(12, 98);
-            this.lblcantidad.Name = "lblcantidad";
-            this.lblcantidad.Size = new System.Drawing.Size(49, 13);
-            this.lblcantidad.TabIndex = 1;
-            this.lblcantidad.Text = "Cantidad";
+            this.txtNUM.Location = new System.Drawing.Point(68, 259);
+            this.txtNUM.Name = "txtNUM";
+            this.txtNUM.Size = new System.Drawing.Size(85, 20);
+            this.txtNUM.TabIndex = 43;
             // 
-            // txtcantidad
+            // lblrfi
             // 
-            this.txtcantidad.Location = new System.Drawing.Point(67, 96);
-            this.txtcantidad.Name = "txtcantidad";
-            this.txtcantidad.Size = new System.Drawing.Size(100, 20);
-            this.txtcantidad.TabIndex = 2;
+            this.lblrfi.AutoSize = true;
+            this.lblrfi.BackColor = System.Drawing.Color.Transparent;
+            this.lblrfi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblrfi.ForeColor = System.Drawing.Color.Black;
+            this.lblrfi.Location = new System.Drawing.Point(241, 264);
+            this.lblrfi.Name = "lblrfi";
+            this.lblrfi.Size = new System.Drawing.Size(82, 13);
+            this.lblrfi.TabIndex = 42;
+            this.lblrfi.Text = "Respuesta: ?";
             // 
-            // lblrespuesta
+            // lblfibo
             // 
-            this.lblrespuesta.AutoSize = true;
-            this.lblrespuesta.Location = new System.Drawing.Point(254, 99);
-            this.lblrespuesta.Name = "lblrespuesta";
-            this.lblrespuesta.Size = new System.Drawing.Size(70, 13);
-            this.lblrespuesta.TabIndex = 3;
-            this.lblrespuesta.Text = "Respuesta: ?";
+            this.lblfibo.AutoSize = true;
+            this.lblfibo.BackColor = System.Drawing.Color.Transparent;
+            this.lblfibo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblfibo.ForeColor = System.Drawing.Color.Black;
+            this.lblfibo.Location = new System.Drawing.Point(16, 262);
+            this.lblfibo.Name = "lblfibo";
+            this.lblfibo.Size = new System.Drawing.Size(50, 13);
+            this.lblfibo.TabIndex = 41;
+            this.lblfibo.Text = "Numero";
             // 
-            // txtpagar
+            // btnprocesar
             // 
-            this.txtpagar.Location = new System.Drawing.Point(106, 14);
-            this.txtpagar.Name = "txtpagar";
-            this.txtpagar.Size = new System.Drawing.Size(100, 20);
-            this.txtpagar.TabIndex = 5;
-            this.txtpagar.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.btnprocesar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnprocesar.ForeColor = System.Drawing.Color.Black;
+            this.btnprocesar.Location = new System.Drawing.Point(160, 189);
+            this.btnprocesar.Name = "btnprocesar";
+            this.btnprocesar.Size = new System.Drawing.Size(75, 23);
+            this.btnprocesar.TabIndex = 40;
+            this.btnprocesar.Text = "Procesar";
+            this.btnprocesar.UseVisualStyleBackColor = true;
+            this.btnprocesar.Click += new System.EventHandler(this.btnprocesar_Click);
             // 
-            // label2
+            // txtnumero
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 17);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Cantidad a pagar $";
+            this.txtnumero.Location = new System.Drawing.Point(68, 190);
+            this.txtnumero.Name = "txtnumero";
+            this.txtnumero.Size = new System.Drawing.Size(85, 20);
+            this.txtnumero.TabIndex = 39;
             // 
-            // txtefectivo
+            // lblresp
             // 
-            this.txtefectivo.Location = new System.Drawing.Point(106, 45);
-            this.txtefectivo.Name = "txtefectivo";
-            this.txtefectivo.Size = new System.Drawing.Size(100, 20);
-            this.txtefectivo.TabIndex = 8;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(54, 48);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(55, 13);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Efectivo $";
-            // 
-            // btncobrar
-            // 
-            this.btncobrar.Location = new System.Drawing.Point(222, 12);
-            this.btncobrar.Name = "btncobrar";
-            this.btncobrar.Size = new System.Drawing.Size(75, 23);
-            this.btncobrar.TabIndex = 9;
-            this.btncobrar.Text = "Cobrar";
-            this.btncobrar.UseVisualStyleBackColor = true;
-            this.btncobrar.Click += new System.EventHandler(this.btncobrar_Click);
-            // 
-            // lblcambio
-            // 
-            this.lblcambio.AutoSize = true;
-            this.lblcambio.Location = new System.Drawing.Point(303, 17);
-            this.lblcambio.Name = "lblcambio";
-            this.lblcambio.Size = new System.Drawing.Size(54, 13);
-            this.lblcambio.TabIndex = 12;
-            this.lblcambio.Text = "Cambio: ?";
+            this.lblresp.AutoSize = true;
+            this.lblresp.BackColor = System.Drawing.Color.Transparent;
+            this.lblresp.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblresp.ForeColor = System.Drawing.Color.Black;
+            this.lblresp.Location = new System.Drawing.Point(241, 193);
+            this.lblresp.Name = "lblresp";
+            this.lblresp.Size = new System.Drawing.Size(82, 13);
+            this.lblresp.TabIndex = 38;
+            this.lblresp.Text = "Respuesta: ?";
             // 
             // lblnumero
             // 
             this.lblnumero.AutoSize = true;
-            this.lblnumero.Location = new System.Drawing.Point(17, 164);
+            this.lblnumero.BackColor = System.Drawing.Color.Transparent;
+            this.lblnumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblnumero.ForeColor = System.Drawing.Color.Black;
+            this.lblnumero.Location = new System.Drawing.Point(16, 193);
             this.lblnumero.Name = "lblnumero";
-            this.lblnumero.Size = new System.Drawing.Size(44, 13);
-            this.lblnumero.TabIndex = 13;
+            this.lblnumero.Size = new System.Drawing.Size(50, 13);
+            this.lblnumero.TabIndex = 37;
             this.lblnumero.Text = "Numero";
             // 
-            // label3
+            // lblvuelto
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(15, 229);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 14;
-            this.label3.Text = "label3";
+            this.lblvuelto.AutoSize = true;
+            this.lblvuelto.BackColor = System.Drawing.Color.Transparent;
+            this.lblvuelto.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblvuelto.ForeColor = System.Drawing.Color.Black;
+            this.lblvuelto.Location = new System.Drawing.Point(287, 42);
+            this.lblvuelto.Name = "lblvuelto";
+            this.lblvuelto.Size = new System.Drawing.Size(14, 13);
+            this.lblvuelto.TabIndex = 36;
+            this.lblvuelto.Text = "?";
             // 
-            // label5
+            // btncobrar
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(254, 162);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(70, 13);
-            this.label5.TabIndex = 15;
-            this.label5.Text = "Respuesta: ?";
+            this.btncobrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncobrar.ForeColor = System.Drawing.Color.Black;
+            this.btncobrar.Location = new System.Drawing.Point(222, 37);
+            this.btncobrar.Name = "btncobrar";
+            this.btncobrar.Size = new System.Drawing.Size(57, 23);
+            this.btncobrar.TabIndex = 35;
+            this.btncobrar.Text = "Cobrar";
+            this.btncobrar.UseVisualStyleBackColor = true;
             // 
-            // txtnumero
+            // txtefectivo
             // 
-            this.txtnumero.Location = new System.Drawing.Point(67, 161);
-            this.txtnumero.Name = "txtnumero";
-            this.txtnumero.Size = new System.Drawing.Size(100, 20);
-            this.txtnumero.TabIndex = 16;
+            this.txtefectivo.Location = new System.Drawing.Point(136, 37);
+            this.txtefectivo.Name = "txtefectivo";
+            this.txtefectivo.Size = new System.Drawing.Size(80, 20);
+            this.txtefectivo.TabIndex = 34;
             // 
-            // textBox2
+            // label4
             // 
-            this.textBox2.Location = new System.Drawing.Point(67, 226);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 17;
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(71, 40);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(65, 13);
+            this.label4.TabIndex = 33;
+            this.label4.Text = "Efectivo $";
             // 
-            // btnprocesar
+            // txtpagar
             // 
-            this.btnprocesar.Location = new System.Drawing.Point(173, 159);
-            this.btnprocesar.Name = "btnprocesar";
-            this.btnprocesar.Size = new System.Drawing.Size(75, 23);
-            this.btnprocesar.TabIndex = 18;
-            this.btnprocesar.Text = "Procesar";
-            this.btnprocesar.UseVisualStyleBackColor = true;
-            this.btnprocesar.Click += new System.EventHandler(this.btnprocesar_Click);
+            this.txtpagar.Location = new System.Drawing.Point(136, 6);
+            this.txtpagar.Name = "txtpagar";
+            this.txtpagar.Size = new System.Drawing.Size(80, 20);
+            this.txtpagar.TabIndex = 32;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(22, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(115, 13);
+            this.label2.TabIndex = 31;
+            this.label2.Text = "Cantidad a pagar $";
+            // 
+            // lblrespuesta
+            // 
+            this.lblrespuesta.AutoSize = true;
+            this.lblrespuesta.BackColor = System.Drawing.Color.Transparent;
+            this.lblrespuesta.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblrespuesta.ForeColor = System.Drawing.Color.Black;
+            this.lblrespuesta.Location = new System.Drawing.Point(219, 111);
+            this.lblrespuesta.Name = "lblrespuesta";
+            this.lblrespuesta.Size = new System.Drawing.Size(82, 13);
+            this.lblrespuesta.TabIndex = 30;
+            this.lblrespuesta.Text = "Respuesta: ?";
+            // 
+            // txtcantidad
+            // 
+            this.txtcantidad.Location = new System.Drawing.Point(76, 108);
+            this.txtcantidad.Name = "txtcantidad";
+            this.txtcantidad.Size = new System.Drawing.Size(84, 20);
+            this.txtcantidad.TabIndex = 29;
+            // 
+            // lblcantidad
+            // 
+            this.lblcantidad.AutoSize = true;
+            this.lblcantidad.BackColor = System.Drawing.Color.Transparent;
+            this.lblcantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblcantidad.ForeColor = System.Drawing.Color.Black;
+            this.lblcantidad.Location = new System.Drawing.Point(8, 111);
+            this.lblcantidad.Name = "lblcantidad";
+            this.lblcantidad.Size = new System.Drawing.Size(68, 13);
+            this.lblcantidad.TabIndex = 28;
+            this.lblcantidad.Text = "Cantidad $";
+            // 
+            // btnretirar
+            // 
+            this.btnretirar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnretirar.ForeColor = System.Drawing.Color.Black;
+            this.btnretirar.Location = new System.Drawing.Point(167, 106);
+            this.btnretirar.Name = "btnretirar";
+            this.btnretirar.Size = new System.Drawing.Size(52, 23);
+            this.btnretirar.TabIndex = 27;
+            this.btnretirar.Text = "Retirar";
+            this.btnretirar.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(407, 349);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(466, 519);
+            this.Controls.Add(this.btnimprimir);
+            this.Controls.Add(this.txtNUM);
+            this.Controls.Add(this.lblrfi);
+            this.Controls.Add(this.lblfibo);
             this.Controls.Add(this.btnprocesar);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.txtnumero);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblresp);
             this.Controls.Add(this.lblnumero);
-            this.Controls.Add(this.lblcambio);
+            this.Controls.Add(this.lblvuelto);
             this.Controls.Add(this.btncobrar);
             this.Controls.Add(this.txtefectivo);
             this.Controls.Add(this.label4);
@@ -217,22 +275,24 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnretirar;
-        private System.Windows.Forms.Label lblcantidad;
-        private System.Windows.Forms.TextBox txtcantidad;
-        private System.Windows.Forms.Label lblrespuesta;
-        private System.Windows.Forms.TextBox txtpagar;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnimprimir;
+        private System.Windows.Forms.TextBox txtNUM;
+        private System.Windows.Forms.Label lblrfi;
+        private System.Windows.Forms.Label lblfibo;
+        private System.Windows.Forms.Button btnprocesar;
+        private System.Windows.Forms.TextBox txtnumero;
+        private System.Windows.Forms.Label lblresp;
+        private System.Windows.Forms.Label lblnumero;
+        private System.Windows.Forms.Label lblvuelto;
+        private System.Windows.Forms.Button btncobrar;
         private System.Windows.Forms.TextBox txtefectivo;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button btncobrar;
-        private System.Windows.Forms.Label lblcambio;
-        private System.Windows.Forms.Label lblnumero;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtnumero;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button btnprocesar;
+        private System.Windows.Forms.TextBox txtpagar;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblrespuesta;
+        private System.Windows.Forms.TextBox txtcantidad;
+        private System.Windows.Forms.Label lblcantidad;
+        private System.Windows.Forms.Button btnretirar;
     }
 }
 
