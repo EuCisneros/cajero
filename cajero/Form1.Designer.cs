@@ -157,6 +157,7 @@
             this.btncobrar.TabIndex = 35;
             this.btncobrar.Text = "Cobrar";
             this.btncobrar.UseVisualStyleBackColor = true;
+            this.btncobrar.Click += new System.EventHandler(this.btncobrar_Click);
             // 
             // txtefectivo
             // 
@@ -237,6 +238,7 @@
             this.btnretirar.TabIndex = 27;
             this.btnretirar.Text = "Retirar";
             this.btnretirar.UseVisualStyleBackColor = true;
+            this.btnretirar.Click += new System.EventHandler(this.btnretirar_Click);
             // 
             // Form1
             // 
@@ -244,7 +246,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(466, 519);
+            this.ClientSize = new System.Drawing.Size(466, 530);
             this.Controls.Add(this.btnimprimir);
             this.Controls.Add(this.txtNUM);
             this.Controls.Add(this.lblrfi);
