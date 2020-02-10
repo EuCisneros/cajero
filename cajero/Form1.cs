@@ -43,5 +43,19 @@ namespace cajero
         {
 
         }
-    }
-}
+
+        private void btncobrar_Click(object sender, EventArgs e)
+        {
+
+            sbyte pagar = sbyte.Parse(txtpagar.Text);
+            sbyte efectivo = sbyte.Parse(txtefectivo.Text);
+            int res = 0;
+            res = efectivo - pagar;
+            lblcambio.Text = "Vuelto: $" + res;
+
+        }
+
+        private void btnprocesar_Click(object sender, EventArgs e)
+        {
+
+        }
